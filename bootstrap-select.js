@@ -330,7 +330,9 @@
 
             if (this.options.size == 'auto') {
                 var getSize = function() {
-                    var minHeight,
+                    
+if (that.$lis == null) { return; }
+var minHeight,
                         lisVis = that.$lis.not('.hide');
                     
                     posVert();
